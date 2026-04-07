@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e9e9e9;
+    padding: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 2px solid #555;
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    background-color: #c9d6e3;
+    padding: 20px;
+    border: 2px solid #888;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+}
+
+.account {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;   
+    background-color: red;
+    padding: 20px;
+    border: 2px solid #888;
+    text-align: center;
+}
+
+.account a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.top-nav {
+    background-color: #c8d7a8;
+    padding: 15px;
+    border: 2px solid #888;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+
+    padding: 5px 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+.top-nav a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.account a:hover {
+    text-decoration: underline;
+}
+
+.car-image {
+    border-radius: 10px;
+}
+
+.top-nav ul {
+    list-style: none;
+}
+
+.top-nav li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
+    background-color: #c8d7a8;
+    border: 2px solid #888;
+    padding: 20px;
+    flex: 3;
+}
+
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.car-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 15px auto;
+    border: 2px solid #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid #444;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #d8d2e3;
+    border: 2px solid #888;
+    padding: 20px;
+    flex: 1;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: #c9d6e3;
+    border: 2px solid #888;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+    }
+
+    .logo {
+        flex: 2;
+    }
+
+    .account {
+        flex: 1;
+    }
+
+    .main-content {
+        flex-direction: row;
+    }
+}
